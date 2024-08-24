@@ -1,186 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REX Robotics Club</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #000;
+        color: #fff;
+      }
 
-        .sidebar {
-            width: 80px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 0;
-        }
+      .sidebar {
+        width: 80px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+      }
 
-        .sidebar .logo img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 30px;
-        }
+      .sidebar .logo img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 30px;
+      }
 
-        .sidebar .nav {
-            list-style-type: none;
-            padding: 0;
-        }
+      .sidebar .nav {
+        list-style-type: none;
+        padding: 0;
+      }
 
-        .sidebar .nav li {
-            width: 100%;
-            margin: 20px 0;
-            text-align: center;
-        }
+      .sidebar .nav li {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+      }
 
-        .sidebar .nav li a {
-            text-decoration: none;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 14px;
-        }
+      .sidebar .nav li a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+      }
 
-        .sidebar .nav li a i {
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
+      .sidebar .nav li a i {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
 
-        .main-content {
-            margin-left: 100px;
-            padding: 20px;
-        }
+      .main-content {
+        margin-left: 100px;
+        padding: 20px;
+      }
 
-        .hero-text {
-            text-align: center;
-            padding-top: 50px;
-        }
+      .hero-text {
+        text-align: center;
+        padding-top: 50px;
+      }
 
-        .hero-text h1 {
-            font-size: 80px;
-            margin: 0;
-        }
+      .hero-text h1 {
+        font-size: 80px;
+        margin: 0;
+      }
 
-        .hero-text p {
-            font-size: 24px;
-            margin: 10px 0;
-        }
+      .hero-text p {
+        font-size: 24px;
+        margin: 10px 0;
+      }
 
-        .about-content, .what-are-we, .who-are-we {
-            margin-top: 50px;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 18px;
-            line-height: 1.6;
-        }
+      .about-content,
+      .what-are-we,
+      .who-are-we {
+        margin-top: 50px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 1.6;
+      }
 
-        .about-content em, .what-are-we em, .who-are-we em {
-            font-style: italic;
-        }
+      .about-content em,
+      .what-are-we em,
+      .who-are-we em {
+        font-style: italic;
+      }
 
-        .about-content strong, .what-are-we strong, .who-are-we strong {
-            font-weight: bold;
-        }
+      .about-content strong,
+      .what-are-we strong,
+      .who-are-we strong {
+        font-weight: bold;
+      }
 
-        .footer {
-            margin-top: 50px;
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+      .footer {
+        margin-top: 50px;
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
 
-        .footer a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 16px;
-        }
+      .footer a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 16px;
+      }
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
+      .footer a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="sidebar">
-        <div class="logo">
-            <img src="" alt="REX Logo">
-        </div>
-        <ul class="nav">
-            <li><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
-            <li><a href="#projects"><i class="fa fa-android"></i> PROJECTS</a></li>
-            <li><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
-            <li><a href="#about"><i class="fa fa-info-circle"></i> ABOUT US</a></li>
-            <li><a href="#contact"><i class="fa fa-envelope"></i> CONTACT US</a></li>
-        </ul>
+      <div class="logo">
+        <img src="" alt="REX Logo" />
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#home"><i class="fa fa-home"></i> HOME</a>
+        </li>
+        <li>
+          <a href="#projects"><i class="fa fa-android"></i> PROJECTS</a>
+        </li>
+        <li>
+          <a href="#events"><i class="fa fa-calendar"></i> EVENTS</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-info-circle"></i> ABOUT US</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-envelope"></i> CONTACT US</a>
+        </li>
+      </ul>
     </div>
 
     <div class="main-content">
-        <section id="home">
-            <div class="hero-text">
-                <h1>REX</h1>
-                <p>  We are limitless...</p>
-            </div>
-        </section>
+      <section id="home">
+        <div class="hero-text">
+          <h1>REX</h1>
+          <p>We are limitless...</p>
+        </div>
+      </section>
 
-        <section id="about">
-            <div class="about-content">
-                <p>REX is an all-female team composed of 14 talented members who collaborate on innovative projects within the fields of STEM, particularly focusing on robotics. The team is organized into different departments, including tech, mechanical engineering, and electronics and communication engineering. Together, they work on cutting-edge projects, showcasing their expertise in design, electronics, and software development, while pushing the boundaries of technology.</p>
-            </div>
-        </section>
+      <section id="about">
+        <div class="about-content">
+          <p>
+            REX is an all-female team composed of 14 talented members who
+            collaborate on innovative projects within the fields of STEM,
+            particularly focusing on robotics. The team is organized into
+            different departments, including tech, mechanical engineering, and
+            electronics and communication engineering. Together, they work on
+            cutting-edge projects, showcasing their expertise in design,
+            electronics, and software development, while pushing the
+            boundaries of technology.
+          </p>
+        </div>
+      </section>
 
-        <section id="what-are-we">
-            <div class="what-we-do">
-                <h2>What We Do ?</h2>
-                <p>REX focuses on designing, developing, and implementing cutting-edge solutions, blending robust mechanical design, sophisticated electronics, and advanced software to create impactful and efficient technological solutions.</p>
-            </div>
-        </section>
+      <section id="what-are-we">
+        <div class="what-we-do">
+          <h2>What We Do ?</h2>
+          <p>
+            REX focuses on designing, developing, and implementing cutting-edge
+            solutions, blending robust mechanical design, sophisticated
+            electronics, and advanced software to create impactful and efficient
+            technological solutions.
+          </p>
+        </div>
+      </section>
 
-        <section id="who-are-we">
-            <div class="who-are-we">
-                <h2>Who Are We?</h2>
-                <p>Our club is made up of enthusiastic students from various disciplines, all connected by a shared passion for robotics and technology. From coders and engineers to designers and strategists, we bring together a diverse set of skills and viewpoints to create innovative projects that have a meaningful impact.</p>
-            </div>
-        </section>
+      <section id="who-are-we">
+        <div class="who-are-we">
+          <h2>Who Are We?</h2>
+          <p>
+            Our club is made up of enthusiastic students from various
+            disciplines, all connected by a shared passion for robotics and
+            technology. From coders and engineers to designers and strategists,
+            we bring together a diverse set of skills and viewpoints to create
+            innovative projects that have a meaningful impact.
+          </p>
+        </div>
+      </section>
     </div>
 
     <div class="footer">
-        <a href="#contact">Contact Us</a> | 
-        <a href="#what-are-we">What Are We?</a> | 
-        <a href="#who-are-we">Who Are We?</a>
+      <a href="#contact">Contact Us</a> |
+      <a href="#what-are-we">What Are We?</a> |
+      <a href="#who-are-we">Who Are We?</a>
     </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
-        // Optional: Add any required interactivity here.
+      // Optional: Add any required interactivity here.
     </script>
 
-<footer>
-    <h3>Join Our Community</h3>
-    <nav>
+    <footer>
+      <h3>Join Our Community</h3>
+      <nav>
         <a href="#home">Home</a>
         <a href="#what-we-do">What Are We</a>
         <a href="#who-are-we">Who Are We</a>
         <a href="#contact-us">Contact Us</a>
-    </nav>
-    <p>&copy; 2024 Cyborg Robotics Club. All rights reserved.</p>
-</footer>    
-
-</body>
+      </nav>
+    </footer>
+  </body>
 </html>
