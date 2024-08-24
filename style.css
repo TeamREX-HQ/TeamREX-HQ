@@ -1,0 +1,117 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #081c3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar .logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.sidebar .nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar .nav li {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sidebar .nav li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.sidebar .nav li a i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.main-content {
+  margin-left: 100px;
+  padding: 20px;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.about-content,
+.what-are-we,
+.who-are-we {
+  margin-top: 50px;
+  background-color: #081c3f;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-content em,
+.what-are-we em,
+.who-are-we em {
+  font-style: italic;
+}
+
+.about-content strong,
+.what-are-we strong,
+.who-are-we strong {
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
