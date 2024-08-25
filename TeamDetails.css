@@ -1,161 +1,76 @@
-<section id="team-details">
-  <link rel="stylesheet" href="styles.css">
-    <div class="team-container">
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_ayush_image.jpg" alt="Ayush Prasad">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/ayush" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/ayush" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Ayush Prasad</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://www.linkedin.com/in/shambhavi-sinha-223a53259/" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Shambhavi Sinha</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        <div class="team-member">
-            <div class="image-container">
-                <img src="path_to_kyari_image.jpg" alt="Kyari Ponkiya">
-                <div class="overlay">
-                    <a href="https://linkedin.com/in/kyari" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com/kyari" target="_blank">Instagram</a>
-                </div>
-            </div>
-            <h3>Kyari Ponkiya</h3>
-            <p>Manager</p>
-        </div>
-        
-        <!-- Repeat similar structure for all other 11 team members -->
-    </div>
-</section>
+#team-details {
+    background-color: #2c3e50;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    max-width: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.team-member h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+}
+
+.team-member p {
+    color: #aaa;
+    font-size: 14px;
+    margin: 0;
+}
