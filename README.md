@@ -8,4 +8,4 @@ We are a team of enthusiastic students from various disciplines, united by a sha
 
 ## 📫 Contact
 
-For any inquiries, please contact us at [email@example.com].
+For any inquiries, please contact us at [https://www.instagram.com/teamrexstem_hq/].
