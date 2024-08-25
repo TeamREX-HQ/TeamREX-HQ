@@ -4,6 +4,14 @@
     text-align: center;
 }
 
+.team-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+
 .team-container {
     display: flex;
     flex-wrap: wrap;
