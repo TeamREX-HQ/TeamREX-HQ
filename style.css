@@ -96,7 +96,7 @@ html {
 
 .footer {
   margin-top: 50px;
-  background-color: #111;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -114,4 +114,84 @@ html {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+#contact {
+  background-color: #222;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the start */
+  flex-wrap: wrap;
+  margin-left: 150px; /* Increased space from sidebar */
+}
+
+.contact-info {
+  max-width: 400px;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-email {
+  margin: 20px 0; /* Space around the email address */
+  font-size: 18px;
+}
+.message-button {
+  background-color: #00cfff;
+  color: #222;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 30px; /* Space above the button */
+}
+
+.social-icons {
+  margin-top: 20px; /* Space above the icons */
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 15px; /* Equal space between icons */
+  text-decoration: none;
+}
+
+.map iframe {
+  border-radius: 10px;
+  width: 600px; /* Width of the map */
+  height: 400px; /* Height of the map */
+  border: 0;
+}
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0; /* Remove left margin on small screens */
+  }
+
+  .map iframe {
+    margin-top: 20px;
+    width: 100%; /* Make the map responsive on small screens */
+    height: 250px; /* Adjust height as needed */
+  }
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px; /* Space between icons */
+}
+
+.social-icons img {
+  width: 44px; /* Size of the icons */
+  height: auto;
+  vertical-align: middle; /* Align icons with text */
 }
