@@ -13,7 +13,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #081c3f;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +75,7 @@ html {
 .what-are-we,
 .who-are-we {
   margin-top: 50px;
-  background-color: #081c3f;
+  background : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   padding: 20px;
   border-radius: 10px;
   font-size: 18px;
