@@ -1,4 +1,4 @@
-# 🤖 REX Robotics Club
+# 🤖 TEAM REX
 
 REX focuses on designing, developing, and implementing cutting-edge solutions by blending robust mechanical design, sophisticated electronics, and advanced software to create impactful and efficient technological solutions.
 
