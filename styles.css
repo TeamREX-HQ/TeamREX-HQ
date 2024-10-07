@@ -17,9 +17,9 @@ ul {
 body {
   min-height: 100vh;
   width: 100%;
-   /* font-family: "Montserrat", sans-serif; */
-    font-family: "Orbitron", sans-serif;
-   overflow: hidden;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Orbitron", sans-serif;
+  overflow: hidden;
 }
 
 .hero-bg {
@@ -28,44 +28,66 @@ body {
   background: url(./img/herobg.jpg) center;
   position: absolute;
   z-index: -2;
-  background-size:cover;
+  background-size: cover;
   /* top: 0;
   left: 0; */
 }
 
-.overlay{
-    width: 100vw;
-  height: 100vh;  
-  background-color: rgba(0, 0, 0, 0.055);  
-    position: absolute;
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.055);
+  position: absolute;
   z-index: -1;
 }
 
-nav{
+nav {
+  display: flex;
+  color: white;
+  font-size: 5rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 12rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav-links {
+  width: 45rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 600;
+  font-style: italic;
+  /* font-size: 3rem; */
+}
+
+.index {
+  font-size: 2rem;
+  color: aqua;
+}
+
+.hero-text{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15rem ;
+    height: 60rem;
     color: white;
-    font-size: 5rem;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.3);
+    line-height: 0.8;
 }
 
-.logo{
-    width: 12rem;
+.hero-text > h1 {
+  font-size: 20rem;
 }
 
-.nav-links{
-    width: 45rem;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-weight: 600;
-    font-style: italic;
-    /* font-size: 3rem; */
-}
-
-.index{
-    font-size: 2rem;
-    color: aqua;
+.hero-text > h2{
+    font-size: 8rem;
 }
