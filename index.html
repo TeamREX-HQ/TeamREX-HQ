@@ -10,8 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <title>REX Robotics Club</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>REX</title>
   </head>
   <body>
     <div class="hero-bg"></div>
@@ -19,21 +22,43 @@
     <div class="animated-overlay"></div>
     <nav>
       <div class="logo-img">
-        <img src="./img/REX-logo-removebg-preview.png" alt="logo" class="logo"/>
+        <img
+          src="./img/REX-logo-removebg-preview.png"
+          alt="logo"
+          class="logo"
+        />
       </div>
-        <ul class="nav-links">
-          <li><a href="#Home"><span class="index">1 </span> Home</a></li>
-          <li><a href="#Pojects"><span class="index">2 </span>Projects</a></li>
-          <li><a href="#Events"><span class="index">3 </span>Events</a></li>
-          <li><a href="#About Us"><span class="index">4 </span>About Us</a></li>
-        </ul>
-      <div class="nav-cta"><a href="">Contact US</a></div>
+      <ul class="nav-links">
+        <li class="hover-underline-animation">
+          <a href="#Home"><span class="index">1 </span> Home</a>
+        </li>
+        <li class="hover-underline-animation">
+          <a href="#Pojects"><span class="index">2 </span>Projects</a>
+        </li>
+        <li class="hover-underline-animation">
+          <a href="#Events"><span class="index">3 </span>Events</a>
+        </li>
+        <li class="hover-underline-animation">
+          <a href="#About Us"><span class="index">4 </span>About Us</a>
+        </li>
+      </ul>
+      <div class="nav-cta"><a href="#">Contact US</a></div>
     </nav>
     <main>
       <div class="hero-text">
-        <h1>REX</h1>
+        <h1 class="linear-wipe">REX</h1>
         <h2>WE ARE LIMITLESS</h2>
       </div>
+      <div class="down-arrow"></div>
+      <section class="projects">
+        <h1>Projects</h1>
+        <div class="project-cards">
+          <div class="project-card"></div>
+        </div>
+      </section>
     </main>
+    <!-- <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+    <script src="./cursor-effect.js"></script>
   </body>
 </html>

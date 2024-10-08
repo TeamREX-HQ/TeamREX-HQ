@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 67.5%;
+  font-size: 62.5%;
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: aqua;
+  --c2: rgba(168, 239, 255, 0.1);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -19,7 +26,14 @@ body {
   width: 100%;
   /* font-family: "Montserrat", sans-serif; */
   font-family: "Orbitron", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body .dot {
+  position: absolute;
+  border-radius: 50%;
+  background-color: aqua;
 }
 
 .hero-bg {
@@ -29,8 +43,6 @@ body {
   position: absolute;
   z-index: -2;
   background-size: cover;
-  /* top: 0;
-  left: 0; */
 }
 
 .overlay {
@@ -44,7 +56,7 @@ body {
 nav {
   display: flex;
   color: white;
-  font-size: 5rem;
+  font-size: 7rem;
   width: 100%;
   justify-content: space-around;
   align-items: center;
@@ -66,7 +78,6 @@ nav {
   color: white;
   font-weight: 600;
   font-style: italic;
-  /* font-size: 3rem; */
 }
 
 .index {
@@ -74,20 +85,186 @@ nav {
   color: aqua;
 }
 
-.hero-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 15rem ;
-    height: 60rem;
-    color: white;
-    line-height: 0.8;
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15rem;
+  height: 87.5vh;
+  color: white;
+  line-height: 0.8;
 }
 
 .hero-text > h1 {
-  font-size: 20rem;
+  font-size: 40rem;
 }
 
-.hero-text > h2{
-    font-size: 8rem;
+.hero-text > h2 {
+  font-size: 12rem;
+}
+
+/*Nav links underline animation effect*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Button Effect */
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+.nav-cta {
+  border: 0.35rem solid;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  font-size: 3.2rem;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.nav-cta:nth-child(2) {
+  border-image: radial-gradient(
+      ellipse at var(--gradX) var(--gradY),
+      var(--c1),
+      var(--c1) 10%,
+      var(--c2) 40%
+    )
+    30;
+  animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+/* Hero Shine Animation */
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+.linear-wipe {
+  background: linear-gradient(to left, #fff 20%, aqua 40%, rgb(0, 255, 221) 60%, #fff 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: shine 2s linear infinite;
+  animation: shine 2s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
+}
+
+/* Down Arrow animation */
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 15rem);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 4rem;
+  border: 2px solid rgb(0, 255, 221);
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 2.2rem;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid rgb(0, 255, 221);
+  border-right: 4px solid rgb(0, 255, 221);
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+/* projects section */
+
+.projects{
+  height: 100vh;
 }
