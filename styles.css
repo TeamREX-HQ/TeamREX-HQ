@@ -61,6 +61,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
+  /* position: fixed; */
 }
 
 .logo {
@@ -101,6 +102,17 @@ nav {
 
 .hero-text > h2 {
   font-size: 12rem;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+  background-color: aqua;
 }
 
 /*Nav links underline animation effect*/
@@ -160,6 +172,12 @@ nav {
     )
     30;
   animation: borderRotate var(--d) linear infinite forwards;
+  transition: all ease-in-out 500ms;
+}
+
+.nav-cta:hover {
+  background-color: rgb(0, 255, 221);
+  color: black;
 }
 
 .nav-cta:nth-child(2) {
@@ -209,7 +227,13 @@ nav {
   }
 }
 .linear-wipe {
-  background: linear-gradient(to left, #fff 20%, aqua 40%, rgb(0, 255, 221) 60%, #fff 80%);
+  background: linear-gradient(
+    to left,
+    #fff 20%,
+    aqua 40%,
+    rgb(0, 255, 221) 60%,
+    #fff 80%
+  );
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -263,8 +287,54 @@ nav {
   }
 }
 
-/* projects section */
+/* About Us section */
 
-.projects{
+#About-Us {
   height: 100vh;
+  /* background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); */
+  background-image: url(./img/modern-background-with-lines.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#About-Us h1 {
+  font-size: 20rem;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.About-Us-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  align-self: center;
+  padding-top: 6rem;
+}
+
+.About-Us-card {
+  width: 30vw;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: rgba(89, 89, 89, 0.05);
+  backdrop-filter: blur(5px);
+  padding: 0rem 8rem 5rem 8rem;
+  line-height: 2rem;
+}
+
+.About-Us-card h2 {
+  font-size: 4rem;
+  margin: 4rem 0rem 4rem 0rem;
+}
+
+.About-Us-card p {
+  font-size: 1.5rem;
+  font-weight: 200;
 }
